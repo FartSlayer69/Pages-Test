@@ -41,6 +41,7 @@ function animate(time) {
 var size = {size: 175};
 const sound = document.getElementById("sound")
 const sound2 = document.getElementById("sound2")
+const sound3 = document.getElementById("sound3")
 const tween3 = new Tween(size, false) // Create a new tween that modifies 'coords'.
 	.to({size:125}, 500) // Move to (300, 200) in 1 second.
 	.easing(Easing.Quadratic.Out) // Use an easing function to make the animation smooth.
@@ -52,8 +53,9 @@ sound.preservesPitch = false;
 var clickTimes = 1
 box.addEventListener("click", function(){
 	if (clickTimes == 40){
-		clickTimes += 1
-		sound2.play()
+		clickTimes += 1;
+		sound2.play();
+		sound3.play();
 		tween3.stop();
 		tween3.start();
 		box.innerHTML = "HAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAHHAHAHAHAAHAHHAHAHAHAHAHAHAHAHAHAH"
@@ -66,8 +68,8 @@ box.addEventListener("click", function(){
 				document.body.appendChild(newText)
 				setInterval(function(){
 					newText.style.color = "rgb("+String(Math.floor(Math.random()*255) + 1)+","+String(Math.floor(Math.random()*255) + 1)+","+String(Math.floor(Math.random()*255) + 1)+")"
-				},75)
-			},5 * i)
+				},50)
+			},4 * i)
 		}
 		setTimeout(() => {
 			window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
