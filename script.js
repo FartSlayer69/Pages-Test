@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import {Tween,Easing,Group} from 'https://cdnjs.cloudflare.com/ajax/libs/tween.js/25.0.0/tween.esm.js'
 
 setTimeout(() => {
@@ -96,10 +95,3 @@ box.addEventListener("click", function(){
 	}
 });
 requestAnimationFrame(animate);
-=======
-setTimeout(() => {
-  const p = document.createElement("p");
-  p.innerText = "and it's dynamic, too!";
-  document.body.appendChild(p);
-}, 2000);
->>>>>>> f4898650a7430eec39aede326350c8bb92d6b924

@@ -1,5 +1,4 @@
 html {
-<<<<<<< HEAD
     
 }
 body {
@@ -15,11 +14,4 @@ p, h1, a {
 }
 #clickme {
     user-select: none;
-=======
-    background-color: darkblue;
-}
-
-p, h1 {
-    color: yellow;
->>>>>>> f4898650a7430eec39aede326350c8bb92d6b924
 }
